@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+:root{
+    --primary-color: #495E57;
+    --primary-color2: #f4ce14;
+    --secondary-color: #ee9972;
+    --secondary-color2: #fbdabb;
+    --secondary-color3: #edefee;
+    --secondary-color4: #333333;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/******************************************
+FORM
+*******************************************/
+
+#booking {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--secondary-color4);
+}
+
+#restaurant-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+
+#restaurant-display > img {
+    height: 200px;
+    border-radius: 5px;
+}
+
+.reserve-form {
+    display: grid;
+    /* max-width: 400px; */
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.reserve-text {
+    color: var(--primary-color2);
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+/************************
+RESERVATION FORM
+**************************/
+
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.left-form,
+.right-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    width: 100%;
+}
+
+.form-input > input,
+.form-input > select {
+    width: 80%;
+    /* height: 2rem; */
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+}
+
+.submit-button-container {
+    display: grid;
+    place-content: center;
+    margin-top: 20px;
+}
+
+/************************
+CONFIRM BOOKING FORM
+**************************/
+
+.left-inputs-container,
+.right-inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.booking-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    /* margin-right: 100px; */
+}
+
+.booking-info > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.requests {
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/******************************************
+CONFIRMED-BOOKING
+*******************************************/
+
+#confirmed-booking > img {
+    width: 100%;
+}
+
+.msg {
+    padding: 30px;
+    text-align: center;
+}
+
+.thanks-msg {
+    font-size: 1.1rem;
+
+}
+
+.restaurant-name {
+    color: var(--primary-color2);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
